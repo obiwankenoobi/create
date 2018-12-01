@@ -24,11 +24,11 @@ create <dir> <platform> <name>
 ## params
 
 ```js
-**<dir>** = c / s; // will create the file inside /src/components or /src/screens
+<dir> = c / s; // will create the file inside /src/components or /src/screens
 
-**<platform>** = r / rn; // will create template for React or React Native projects
+<platform> = r / rn; // will create template for React or React Native projects
 
-**<name>** = NameComponent; // the name of the component or the screen
+<name> = NameComponent; // the name of the component or the screen
 ```
 
 **note** When using `rn` you will get a file configured with `connect` module of `react-redux` by default
