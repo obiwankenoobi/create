@@ -7,7 +7,7 @@
   "bin": "./app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm install && npm link && chmod +x app.js"
+    "build": "npm install && chmod +x app.js && sudo npm link"
   },
   "author": "",
   "license": "ISC"
