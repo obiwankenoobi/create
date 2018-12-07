@@ -188,5 +188,6 @@ async function checkForModules(...modules) {
 }
 
 function installModules(...modules) {
+  console.log("installing...");
   exec(`npm i -S ${modules[0].join(" ")}`);
 }
