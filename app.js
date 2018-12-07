@@ -33,7 +33,7 @@ program
     if (dir == "co" || dir == "sc") {
       if (!platform || !fileName) {
         console.log("missing params");
-      } else if (platform != "rn" || platform != "rc") {
+      } else if (platform != "rn" && platform != "rc") {
         console.log("please choose platform <rc> / <rn>");
       } else {
         switch (dir) {
