@@ -10,5 +10,8 @@
     "build": "npm install && chmod +x app.js && sudo npm link"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.19.0"
+  }
 }

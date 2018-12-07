@@ -1,4 +1,4 @@
-const reactBasic = `import React, { Component } from 'react';
+const reactBasic = name => `import React, { Component } from 'react';
 
     
 class ${process.argv[4]} extends Component {
@@ -15,14 +15,14 @@ class ${process.argv[4]} extends Component {
     }
 }
 
-export default ${process.argv[4]};`;
+export default ${name};`;
 
-const reactNativeBasic = `
+const reactNativeBasic = name => `
 import { View, Text } from 'react-native';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-class ${process.argv[4]} extends Component {
+class ${name} extends Component {
     constructor(props) {
         super(props);
         this.state = {  };
@@ -30,19 +30,19 @@ class ${process.argv[4]} extends Component {
     render() {
         return (
             <View style={{alignItems:"center", justifyContent:"center"}}>
-                <Text>${process.argv[4]}</Text>
+                <Text>${name}</Text>
             </View>
         );
     }
 }
 
-export default ${process.argv[4]};
+export default ${name};
 
 
 const stateToProps = state => ({})
-const ${process.argv[4]}Page = connect(stateToProps, {})(${process.argv[4]})
+const ${name}Page = connect(stateToProps, {})(${name})
 
 
-export default ${process.argv[4]}Page`;
+export default ${name}Page`;
 
 module.exports = { reactBasic, reactNativeBasic };
