@@ -67,10 +67,11 @@ async function createComponent(dir, fileName, file) {
   createDir(dir)
     .then(async res => {
       await createFile(fileName, dir, file(fileName));
-      console.log("file created");
+      console.log(`${fileName} component created`);
     })
     .catch(async e => {
       await createFile(fileName, dir, file(fileName));
+      console.log(`${fileName} component created`);
     });
 }
 
