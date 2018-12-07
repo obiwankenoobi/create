@@ -13,15 +13,6 @@ const {
 } = require("./reduxBasicComponent");
 const modules = ["redux", "react-redux", "redux-thunk"];
 
-function createFile(dir, file) {
-  fs.writeFile(`src/${dir}/${process.argv[4]}.js`, file, err => {
-    if (err) {
-      return console.log(err);
-    }
-    console.log("done");
-  });
-}
-
 async function checkForSrc() {
   return fs.existsSync("src");
 }
