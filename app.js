@@ -178,7 +178,6 @@ async function checkForModules(...modules) {
   for (const m of modules) {
     try {
       require.resolve(m);
-      console.log(m);
     } catch (error) {
       modulesToInstall.push(m);
     }
