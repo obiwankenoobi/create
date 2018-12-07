@@ -20,18 +20,18 @@ $ npm run build
 From your project directory
 
 ```sh
-create <dir> <platform> <name>
+create <type> [platform] [name]
 ```
 
 ## params
 
-```js
-<dir> = c / s; // will create the file inside /src/components or /src/screens
 
-<platform> = r / rn; // will create template for React or React Native projects
+| param      | options               | description                                          |
+| ---------- | --------------------- | ---------------------------------------------------- |
+| `type`     | `co` / `sc` / `redux` | what to create (component, screen or redux template) |
+| `platform` | `rc` / `rn`           | for what platform `react` or `react-native`          |
+| `name`     | `String`              | what name to give the component                      |
 
-<name> = NameComponent; // the name of the component or the screen
-```
 
 **note** When using `rn` you will get a file configured with `connect` module of `react-redux` by default
 
